@@ -126,8 +126,12 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 15rem 0 10rem 0;
   margin-top: -10rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -241,7 +245,7 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 20rem; }
+  height: 50rem; }
   .card__side {
     height: 50rem;
     position: absolute;
@@ -332,6 +336,49 @@ body {
   .card__price--value {
     font-size: 4rem;
     font-weight: 100; }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    position: relative;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-2rem) skewX(12deg); }
+  .story__image {
+    height: 100%;
+    transform: translate(-3rem) scale(1.4);
+    transition: all 0.5s; }
+  .story__text {
+    transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__image {
+    transform: translate(-3rem) scale(1);
+    filter: blur(3px) brightness(80%); }
 
 .row {
   max-width: 114rem;
