@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -o dist",
-    "compile:watch": "npm run compile:sass && node-sass sass -wo dist"
+    "watch:sass": "node-sass --watch sass/main.scss css/style.css"
   },
   "author": "dentrix",
   "license": "ISC",
